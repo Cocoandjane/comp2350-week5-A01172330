@@ -1,6 +1,6 @@
 const mysql = require('mysql2');
 
-const is_heroku = process.env.IS_HEROKU || false;
+const is_heroku = process.env.IS_HEROKU || 3000;
 
 
 const dbConfigHeroku = {
