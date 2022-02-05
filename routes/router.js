@@ -13,14 +13,14 @@ router.get('/', (req, res) => {
 		}
 		else {
 			
-			dbModel.getAllTodos((err, result) => {
+			dbModel.getAllUsers((err, result) => {
 				if (err) {
 					res.render('error', {message: 'Error reading from MySQL'});
 					console.log("Error reading from mysql");
 					console.log(err);
 				}
 				else { //success
-					res.render('index', {allTodos: result});
+					res.render('index', {allUsers: result});
 
 					//Output the results of the query to the Heroku Logs
 					console.log(result);

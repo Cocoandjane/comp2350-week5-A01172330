@@ -11,5 +11,4 @@ function getAllTodos(callback) {
 	callback(null, data);
 }
 
-
 module.exports = {getAllTodos}
